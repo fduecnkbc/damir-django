@@ -1,3 +1,14 @@
 <html>
-hello russia
-</html>
+<div>
+        <h1><a href="/"> damir news </a></h1>
+    </div>
+
+    {% for post in posts %}
+        <div>
+            <p>published: {{ post.date }}</p>
+            <h1><a href="">{{ post.title }}</a></h1>
+            <p>{{ post.text|linebreaksbr }}</p>
+        </div>
+    {% endfor %}
+    
+    </html>
