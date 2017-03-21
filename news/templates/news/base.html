@@ -1,23 +1,34 @@
  {% load staticfiles %}
     <html>
+    
         <head>
-            <title>SMC 'DAMIR"</title>
-            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-            <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-            <link rel="stylesheet" href="{% static 'css/news.css' %}">
+            <title>НПЦ Дамир</title>
+            <link rel="stylesheet" href="{% static "css/news.css" %}">
         </head>
+        
         <body>
-	    <div class="page-header">
-                <h1><a href="/">damir news</a></h1>
+	    <div id = "header">
+        	<img src="" alt="logo"/>
+        	ул. Пугачева 49, тел. , имэил
             </div>
-            <div class="content container">
-                <div class="row">
-                    <div class="col-md-8">
+            
+            <div class = "navigation">
+            
+        	<ul>
+        	    <li>Новости</li>
+        	    <li>Вакансии</li>
+        	    <li>Услуги</li>
+        	    <li>Запчасти</li>
+        	    <li>О Нас</li>
+        	</ul>
+            </div>
+            
+            <div class = "wrapper">
                     {% block content %}
                     {% endblock %}
-                    </div>
-                </div>
             </div>
+            
+            <footer
+                
         </body>
     </html>
